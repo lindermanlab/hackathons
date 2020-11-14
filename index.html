@@ -81,7 +81,7 @@
                 {% for post in site.posts %}
                 <div class="row">
                     <div class="4u 12u(mobile)">
-                        <span class="image fit"><img src={{ post.pic }} /></span>
+                        <span class="image fit"><a href="{{ post.link }}" target="_blank"><img src={{ post.pic }} title="{{ post.alt }}"/></a></span>
                     </div>
 
                     <div class="8u 12u(mobile)">
