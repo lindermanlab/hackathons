@@ -1,0 +1,125 @@
+---
+---
+
+<!DOCTYPE HTML>
+<!--
+    Built on Miniport by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Spikes, Stats and Source Code: Hacking with The Linderman Lab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-56811282-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+<body>
+
+    <!-- Home -->
+    <div class="wrapper style1 first" id="top">
+        <article class="container">
+            <div class="row">
+                <div class="4u 12u(mobile)">
+                    <span class="image fit">
+        <img src="images/logo.gif" alt="" />
+          </span>
+                </div>
+                <div class="8u 12u(mobile)">
+                    <header>
+                        <h1>Spikes, Stats, and Source Code</h1>
+                        <h2>Hacking with the Linderman Lab</h2>
+                        <p>
+                            We get together on Friday afternoons to write code, build models, explore datasets, and learn new things. Follow along here with our collection of Google Colab notebooks.  Better yet, make a copy and start hacking too! 
+                        </p>
+
+                    </header>
+
+                    <!--navigation bar -->
+                    <ul class="container" id="nav">
+                        <li>
+                            <a href="http://slinderman.web.stanford.edu/" target="_blank" class="icon">
+                                <i class="fas fa-users"></i> Lab Homepage
+                            </a>
+                        </li>
+                        <li><a href="https://github.com/lindermanlab" target="_blank" class="icon"><i class="fab fa-github"></i> Lab GitHub</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </article>
+    </div>
+
+
+
+    <!-- Posts -->
+    <div class="wrapper style2" id="blog">
+        <article class="container">
+
+            <div class="posts">
+                {% for post in site.posts %}
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <span class="image fit"><img src={{ post.pic }} /></span>
+                    </div>
+
+                    <div class="8u 12u(mobile)">
+                        <header>
+                            <h2><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></h2>
+                            <p class="author">
+                                <i>By  {{ post.author }}, {{ post.date | date: "%B %-d, %Y" }} </i>
+                            </p>
+                        </header>
+                        <div class="excerpt">
+                            {{ post.excerpt }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="wrapper style4 copyright">
+        <ul>
+            <li>&copy; Scott W. Linderman.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
