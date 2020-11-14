@@ -1,2 +1,2 @@
 # hackathons
-Jupyter notebooks from our weekly (or so) hackathons
+A blog to highlight the Colab notebooks from our weekly (or so) hackathons
