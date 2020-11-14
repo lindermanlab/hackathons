@@ -468,7 +468,7 @@ ul.default li {
 
 #top .image img {
     border-radius: 50%;
-    border: 0px solid #021a40;
+    border: 0px solid #ffffff;
 }
 
 #top p a {
@@ -487,11 +487,10 @@ ul.default li {
     font-size: 1.25em;
     font-weight: 600;
     color: #ffffff;
-text-decoration: none;
+    text-decoration: none;
     outline: 0;
     padding: .2em 1em .2em 0em;
 }
-
 
 
 /*@keyframes blinkingText{
