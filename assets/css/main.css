@@ -656,7 +656,7 @@ ul.default li {
 @media screen and (min-width: 737px) and (max-width: 1200px) {
     /* Basic */
     body {
-        min-width: 960px;
+        min-width: 737px;
         font-size: 11pt;
     }
     input,
