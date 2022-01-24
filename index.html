@@ -79,7 +79,7 @@
 
             <div class="posts">
                 {% for post in site.posts %}
-                <div class="row">
+                <div class="row" id="{{post.shortname}}">
                     <div class="4u 12u(mobile)">
                         <span class="image fit"><a href="{{ post.link }}" target="_blank"><img src={{ post.pic }} title="{{ post.alt }}"/></a></span>
                     </div>
